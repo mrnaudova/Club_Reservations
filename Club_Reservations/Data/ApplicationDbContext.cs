@@ -13,6 +13,6 @@ namespace Club_Reservations.Data
 		public DbSet<Club_Reservations.Models.User>? User { get; set; }
 		public DbSet<Club_Reservations.Models.Table>? Table { get; set; }
 		public DbSet<Club_Reservations.Models.Reservation>? Reservation { get; set; }
-		public DbSet<Club_Reservations.Models.StatisticsModule>? StatisticsModule { get; set; }
+	
 	}
 }

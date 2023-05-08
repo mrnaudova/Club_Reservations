@@ -15,4 +15,38 @@ html {
 
 body {
   margin-bottom: 60px;
+  
+}
+
+.counter-box {
+    display: block;
+    background:#3d3d7e;
+    padding: 40px 20px 37px;
+    text-align: center
+}
+
+    .counter-box p {
+        margin: 5px 0 0;
+        padding: 0;
+        color: white;
+        font-size: 18px;
+        font-weight: 500
+    }
+
+    .counter-box i {
+        font-size: 60px;
+        margin: 0 0 15px;
+        color:lavender;
+    }
+
+.counter {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: lavender;
+    line-height: 28px
+}
+h1.display-4 {
+    padding-top: 20px;
+    padding-bottom: 40px;
 }

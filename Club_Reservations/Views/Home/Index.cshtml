@@ -5,3 +5,32 @@
 <div class="text-center">
     <h1 class="display-4">Welcome to my Club!</h1>
 </div>
+
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="three col-md-4">
+			<div class="counter-box colored">
+				<i class="fa fa-thumbs-o-up"></i>
+				<span class="counter">@ViewData["TablesCount"]</span>
+				<p>Tables</p>
+			</div>
+		</div>
+		<div class="three col-md-4">
+			<div class="counter-box">
+				<i class="fa fa-group"></i>
+				<span class="counter">@ViewData["ClientsCount"]</span>
+				<p>Clients</p>
+			</div>
+		</div>
+		<div class="three col-md-4">
+			<div class="counter-box">
+				<i class="fa  fa-shopping-cart"></i>
+				<span class="counter">@ViewData["ReservationCount"]</span>
+				<p>Reservations</p>
+			</div>
+		</div>
+	</div>
+</div>
