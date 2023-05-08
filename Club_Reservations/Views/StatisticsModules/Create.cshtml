@@ -1,0 +1,48 @@
+﻿@model Club_Reservations.Models.StatisticsModule
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>StatisticsModule</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NumberOfTables" class="control-label"></label>
+                <input asp-for="NumberOfTables" class="form-control" />
+                <span asp-validation-for="NumberOfTables" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumberOfCustomers" class="control-label"></label>
+                <input asp-for="NumberOfCustomers" class="form-control" />
+                <span asp-validation-for="NumberOfCustomers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumberOfPastReservations" class="control-label"></label>
+                <input asp-for="NumberOfPastReservations" class="form-control" />
+                <span asp-validation-for="NumberOfPastReservations" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumberOfUpcomingReservations" class="control-label"></label>
+                <input asp-for="NumberOfUpcomingReservations" class="form-control" />
+                <span asp-validation-for="NumberOfUpcomingReservations" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
